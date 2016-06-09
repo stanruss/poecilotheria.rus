@@ -1,0 +1,484 @@
+@import "node_modules/bourbon/app/assets/stylesheets/_bourbon"
+@import "_vars.sass"
+.center
+	text-align: center
+
+.carousel
+	margin-bottom: 35px
+	top: 35px
+	background-image: none
+	padding: 6px
+	background-color: transparent
+
+
+
+.carousel .container
+	position: relative
+	z-index: 9
+
+.carousel-control
+	height: 100%
+	top: 17px
+	padding-top: 63px
+	font-size: 3.9em
+	color: $white
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
+	background-color: transparent
+	border: 0
+	z-index: 10
+
+.carousel
+	.item
+		height: 250px
+		width: 100%
+	img
+		position: relative
+		width: 258px
+		margin: 0 auto
+		height: 250px
+section
+	&.hal
+		padding: 10px 0 0
+		border-top: 1px #4a1106 solid
+		img
+			margin-top: 15px
+			margin-left: auto
+			margin-right: auto
+			
+			display: block
+	&.about
+		
+		margin-bottom: 30px
+		h1
+			margin-bottom: 30px
+		h5
+			margin-bottom: 30px
+	&.search-all
+		top: 20px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 500px
+		margin-bottom: 32px
+		padding-bottom: 30px
+		.sisea-search-form
+			margin-top: 30px
+			input#search
+				width: 75%
+				font-size: em(13px)
+				margin-bottom: 5px
+			input
+				margin-bottom: 5px
+				float: left
+	&.search
+		position: relative
+		
+		border-top: 1px #4a1106 solid
+		.sisea-search-form
+			width: 100%
+			margin-top: 5px
+			input#search
+				width: 75%
+				font-size: em(13px)
+				margin-bottom: 5px
+			input
+				margin-bottom: 5px
+				float: left
+	&.info-main
+		position: relative
+		padding: 30px 0
+		
+		min-height: 200px
+		.sisea-search-form
+			margin: 30px 0
+			position: relative
+			z-index: 9
+			input#search
+				display: block
+				width: 100%
+				font-size: em(13px)
+				margin-bottom: 10px
+		a
+			color: $black
+			text-decoration: none
+	&.blog
+		top: 32px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 300px
+		margin-bottom: 32px
+		padding-bottom: 30px
+		a
+			color: $black
+			text-decoration: none
+		
+		.quip-fld
+			input
+				width: 100%
+				margin-bottom: 10px
+			input.notyfy
+				width: 15px
+			label
+				display: block
+				width: 0
+			label.noty
+				width: 230px
+	&.carousels
+		background-image: url(../img/header-bg.png)
+		background-repeat: no-repeat
+		background-position: top center
+		.blog-sidebar
+			position: relative
+			top: 32px
+			h3
+				color: $white
+			li
+				list-style: none
+				span
+					color: $white
+					font-size: em(12px)
+				a
+					color: $seb
+	&.confirmreg
+		top: 32px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 500px
+		a
+			color: $dgrey
+			text-decoration: none
+	&.podreg
+		top: 32px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 500px
+		p
+			text-align: center
+			font-size: em(16px)
+			font-family: $ptsb
+			color: $gbf
+	&.forgot
+		top: 32px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 500px
+		h2, p
+			text-align: center
+		.loginFP
+			min-width: 300px
+			max-width: 700px
+			margin: 30px auto
+			label
+				display: block
+				font-family: $ptsb
+			input
+				width: 80%
+				padding-left: 10px
+				font-family: $rwsb
+				margin-top: 3px
+				font-size: em(13px)
+			p
+				text-align: center
+				font-family: $ptsb
+				color: $gbf
+				margin-top: 30px
+			.loginFPLegend
+				color: $gbf
+				text-align: center
+				font-family: $rwsb
+				font-size: em(16px)
+			.loginFPFieldset
+				text-align: center
+				span.loginFPButton input
+					width: 300px
+					margin: 30px auto
+	&.reg
+		top: 32px
+		position: relative
+		padding-top: 30px
+		
+		min-height: 500px
+		h3
+			color: #745a37
+			text-align: center
+			font-family: $rwsb
+		.register
+			min-width: 300px
+			max-width: 700px
+			margin: 30px auto
+			label
+				display: block
+				margin: 20px 0 3px 30px
+				font-size: em(13px)
+				font-family: $ptsb
+			input
+				width: 80%
+				margin: 0 30px
+				padding-left: 10px
+				font-size: em(13px)
+				font-family: $pts
+			.sub
+				margin-top: 30px
+	&.info
+		top: 32px
+		position: relative
+		padding-bottom: 30px
+		
+		a
+			color: $dgrey
+			text-decoration: none
+		
+		h4
+			font-family: $rwsb
+		.col-md-3
+			border: 1px #000 solid
+			padding-bottom: 30px
+	&#contact
+		background-color: transparent
+		margin-bottom: 0
+		border-top: 2px #4a1106 solid
+		padding-top: 30px
+		background-image: url(../img/footer_bg.jpg)
+		background-repeat: repeat-x
+		background-position: bottom center
+		padding-bottom: 155px
+		margin-top: 9px
+		background-color: transparent
+		margin-bottom: 0
+		animation-duration: 2s
+		label, button
+			font-family: $rwsb 
+			font-size: em(13px)
+.services
+	padding-top: 15px
+	position: relative
+	top: 32px
+	
+	position: relative
+	text-align: center
+	margin-bottom: 32px
+	padding-bottom: 30px
+	.col-md-3
+		padding: 0
+
+.services-item
+	position: relative
+	border: 5px #977547 solid
+	background-color: $white
+	padding-bottom: 35px
+	z-index: 2
+	h4
+		min-height: 40px
+	&:hover
+		border-color: #513f27
+		-webkit-transition: -webkit-transform 0.6s ease
+		transition: transform 0.6s ease
+		-webkit-transform: scale(1.05)
+		-ms-transform: scale(1.05)
+		transform: scale(1.05)
+		z-index: 3
+		position: relative
+		box-shadow: rgba(0, 0, 0, 0.45) 0 0 32px
+		.services-item-image
+			&::before
+				opacity: 0.7
+				-webkit-transition: all 0.5s ease
+				transition: all 0.5s ease
+			.fa
+				opacity: 0.7
+				-webkit-transition: all 0.6s ease
+				transition: all 0.6s ease
+		.services-item-stars .fa
+			font-size: 18px
+			margin-left: 15px
+			color: $gbf
+			-webkit-transition: all 0.5s ease
+			transition: all 0.5s ease
+
+.services-item-price a
+	color: $black
+	text-transform: uppercase
+	font-family: "$hbd"
+	
+	padding: 10px 30px
+	&:hover, &:focus
+		text-decoration: none
+		color: $white
+
+.services-item h4
+	margin-top: 25px
+	margin-bottom: 5px
+
+.services-item-stars
+	font-size: 18px
+	color: $gbf
+	margin-bottom: 30px
+	.fa
+		margin-left: 5px
+
+.services-item-image
+	position: relative
+	
+	.fa
+		color: $white
+		font-size: 30px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -15px
+		margin-top: -15px
+		opacity: 0
+	img
+		width: 100%
+		height: auto
+	&::before
+		position: absolute
+		content: ""
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-color: $gbf
+		opacity: 0
+.gallerys
+	position: relative
+	top: 32px
+	min-height: 500px
+	background-color: $mc
+	margin-bottom: 32px
+	padding-bottom: 30px
+	.albumPreview
+		padding-bottom: 30px
+		border: 1px #333 solid
+		margin-top: 20px
+		a
+			color: #000
+			text-decoration: none
+	.gal-item
+		width: 200px
+		margin: 0 auto
+		img
+			margin-bottom: 30px
+.mfp-content
+	position: relative
+	.container
+		margin-right: 0
+		width: 100%
+	img
+		width: 100%
+		height: auto
+		margin-right: 0
+		margin-bottom: 15px
+	h4
+		text-align: center
+		margin-top: 0
+		margin-bottom: 30px
+		font-family: $rsb
+	h5
+		font-size: em(16px)
+		margin-top: 30px
+		font-family: $rsb
+	p
+		display: inline-block
+		font-family: $rsr
+		font-size: em(15px)
+	.info-g
+		width: 320px
+		height: 150px
+		margin: 15% 15px -20% 15px
+		.info
+			font-weight: 100
+			padding: 10px 0
+			span
+				width: 120px
+				display: inline-block
+				font-family: $pts
+				padding: 5px 0
+			div
+				margin-bottom: 5px
+				font-family: $psbi
+				
+	position: relative
+	
+	.container 
+		.col-sm-12
+			line-height: 1.4
+		.col-sm-6 h4
+			font-size: em(18px)
+
+
+
+p.log
+	text-align: center
+	position: relative
+	top: 142px
+	font-size: em(22px)
+	color: $white
+	padding: 0 20px
+
+.photo1, .photo2, .photo3 
+	position: relative
+	z-index: 1
+	&:hover
+		background-color: $gbf
+		background-image: none
+		z-index: 200
+		position: relative
+		border-radius: 50%
+
+		h3
+			padding-top: 50%
+			opacity: 1
+			color: $mc
+			transition: all .5s ease
+		h5
+			opacity: 1
+			color: $mc
+			transition: all .5s ease
+			
+	&::after
+		z-index: 1
+		display: block
+		content: ""
+		width: 200px
+		height: 266px
+		position: absolute
+		top: 0
+		left: 0
+		text-align: center
+		opacity: 0
+		
+	h3, h5
+		opacity: 0
+
+.photo1
+	background-image: url(../img/platonov.jpg) 
+	background-size: 200px 266px
+	width: 200px
+	height: 266px
+	margin: 0 auto
+	position: relative
+	z-index: 1
+	transition: all 1s ease
+.photo2
+	background-image: url(../img/Kaidalov.jpg) 
+	background-size: 200px 266px
+	width: 200px
+	height: 266px
+	margin: 0 auto
+	position: relative
+	z-index: 1
+	transition: all 1s ease
+.photo3
+	background-image: url(../img/Polyakova.jpg) 
+	background-size: 200px 266px
+	width: 200px
+	height: 266px
+	margin: 0 auto
+	position: relative
+	z-index: 1
+	transition: all 1s ease

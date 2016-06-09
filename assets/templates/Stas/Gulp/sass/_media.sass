@@ -1,0 +1,208 @@
+@import "node_modules/bourbon/app/assets/stylesheets/_bourbon"
+@import "_vars.sass"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.carousels
+		.col-md-4
+			display: none
+		.col-md-8
+			min-height: 0
+	section.info
+		position: relative
+		background-color: $mc
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.navbar-wrapper
+		background-image: url(../img/header-bg.png)
+		background-repeat: no-repeat
+		background-position: top center
+	body section.search .sisea-search-form input#search
+		width: 65%
+	section .services-item
+		max-width: 320px
+		margin: 20px auto
+		&:hover
+			-webkit-transform: none
+			-ms-transform: none
+			transform: none
+	.mfp-content
+		position: relative
+		
+		.container
+			margin-right: 0
+			padding: 0 15px 0 0
+			.info-g
+				width: 320px
+				height: 130px
+				margin: 0
+			.col-sm-6
+				padding-left: 0
+	header
+		.logo
+			float: none
+			text-align: center
+			margin: 0 auto
+		.loginLogin
+			padding-left: 0
+		padding-bottom: 22px
+	.navbar-default .navbar-collapse
+		margin: 10px 0 0 0
+	html p.log
+		color: $gbf
+		margin-bottom: 100px
+	section
+		&.carousels .col-sm-4
+			display: none
+		&.hal #kursvalut-com-informer-main-220x130-moskva-orange-container
+			margin-top: 18px
+		
+	.loginLoginForm 
+		span a.left
+			margin-left: 0
+		label
+			display: block
+	.loginLoginFieldset
+		margin-left: 0
+		input
+			display: block
+			width: 320px
+			margin-left: 0
+			margin-bottom: 15px
+			margin-top: 4px
+	.loginForm
+		top: 116px
+		height: 300px
+		width: 300px
+		margin: 0 auto
+		position: relative
+		z-index: 2
+		right: 0
+	
+	.carousel
+		display: none
+	.navbar .nav > li > a
+		color: $gbf
+		text-align: center
+		padding-bottom: 11px
+	.nav-collapse .nav
+		background-color: $mc
+		width: 100%
+		top: 10px
+	.navbar .nav >
+		li > a:hover
+			color: $white
+			background-color: $gbf
+		.active > a
+			color: #fff
+			background-color: $gbf
+			&:hover, &:focus
+				color: $white
+				background-color: $gbf
+	.navbar #navbar
+		position: relative
+		z-index: 400 
+		.navbar-nav
+			width: 100%
+			z-index: 400
+			position: relative
+			background-color: $mc
+			padding-bottom: 30px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 400px)
+	.loginLogin
+		button
+			margin-right: 9px
+	.loginForm
+		width: 280px
+	.loginLoginFieldset
+		width: 250px
+		a
+			font-size: 0.8em
+	.loginRegister span
+		display: none
+	.loginLoginFieldset
+		input
+			width: 250px
+		span
+			font-size: 0.9em
+	header 
+		.navbar-wrapper .loginLogin
+			padding-left: 0
+		#doc_time
+			display: none
+		img.logo
+			width: 250px
+			height: 69px
+			margin: 0 auto
+			margin-top: 49px
+	html
+		section
+			&.blog
+				top: 29px
+			&.gallerys
+				top: 29px
+			&.info
+				top: 29px
+				h3
+					font-size: 1.1em
+				h4
+					font-size: 1em
+				p
+					font-size: em(15px)
+
+	.loginRegister 
+		top: 10px
+		button
+			margin-top: 1px
+	.mfp-container .mfp-content
+		position: relative
+		p
+			font-size: em(13px)
+		.info-g
+			.info
+				span
+					width: 100px
+				div
+					font-size: em(12px)
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
