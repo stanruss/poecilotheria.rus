@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 10 2016 г., 12:27
+-- Время создания: Июн 10 2016 г., 15:39
 -- Версия сервера: 5.5.45
 -- Версия PHP: 5.3.29
 
@@ -1644,7 +1644,7 @@ CREATE TABLE IF NOT EXISTS `modx_manager_log` (
   `item` varchar(255) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `user_occurred` (`user`,`occurred`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=396 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=398 ;
 
 --
 -- Дамп данных таблицы `modx_manager_log`
@@ -2045,7 +2045,9 @@ INSERT INTO `modx_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, 
 (392, 1, '2016-06-10 12:02:44', 'chunk_update', 'modChunk', '6'),
 (393, 1, '2016-06-10 12:02:44', 'propertyset_update_from_element', 'modChunk', '6'),
 (394, 1, '2016-06-10 12:06:00', 'chunk_update', 'modChunk', '6'),
-(395, 1, '2016-06-10 12:06:00', 'propertyset_update_from_element', 'modChunk', '6');
+(395, 1, '2016-06-10 12:06:00', 'propertyset_update_from_element', 'modChunk', '6'),
+(396, 1, '2016-06-10 15:02:04', 'login', 'modContext', 'mgr'),
+(397, 1, '2016-06-10 15:14:39', 'login', 'modContext', 'web');
 
 -- --------------------------------------------------------
 
@@ -2527,7 +2529,7 @@ CREATE TABLE IF NOT EXISTS `modx_quip_threads` (
 --
 
 INSERT INTO `modx_quip_threads` (`name`, `createdon`, `moderated`, `moderator_group`, `moderators`, `notify_emails`, `resource`, `idprefix`, `existing_params`, `quip_call_params`, `quipreply_call_params`) VALUES
-('post-2-7', '2016-05-05 12:18:16', 0, 'Administrator', '', '', 7, 'qcom', '{}', '{"tplComment":"comment","tplCommentOptions":"quipCommentOptions","tplComments":"quipComments","tplReport":"quipReport","rowCss":"quip-comment","altRowCss":"quip-comment-alt","olCss":"quip-comment-parent","unapprovedCss":"quip-unapproved","dateFormat":"%d %m %Y. \\u0432 %H:%M","showWebsite":true,"idPrefix":"qcom","resource":"","moderate":false,"moderators":false,"moderatorGroup":false,"requireAuth":false,"requireUsergroups":"","threaded":true,"threadedPostMargin":15,"useMargins":false,"maxDepth":5,"replyResourceId":"","closeAfter":14,"useGravatar":"0","gravatarIcon":"identicon","gravatarSize":50,"gravatarUrl":"http:\\/\\/www.gravatar.com\\/avatar\\/","sortBy":"rank","sortByAlias":"quipComment","sortDir":"ASC","limit":0,"offset":0,"removeAction":"quip_remove","reportAction":"quip_report","parent":"0","thread":"post-2-7","unsubscribeSecretHash":"One sees great things from the valley, only small things from the peak.","closed":false,"useCss":true,"authorTpl":"quipAuthorTpl","nameField":"username","showAnonymousName":false,"anonymousName":"","allowRemove":true,"removeThreshold":3,"allowReportAsSpam":true,"toPlaceholder":"","placeholderPrefix":"quip","debug":false,"debugUser":"","debugUserId":"","start":0,"tplPagination":"quipPagination","tplPaginationItem":"quipPaginationItem","tplPaginationCurrentItem":"quipPaginationCurrentItem","paginationCls":"quip-pagination","pageCls":"quip-page-number","currentPageCls":"quip-page-current","quip.emailsTo":"stan19781@gmail.com","stillOpen":true}', '{"thread":"post-2-7","requireAuth":"1","requireUsergroups":"","tplAddComment":"new-comment","tplLoginToComment":"quipLoginToComment","tplPreview":"quipPreviewComment","closeAfter":14,"requirePreview":false,"previewAction":"quip-preview","postAction":"quip-post","unsubscribeAction":"quip_unsubscribe","allowedTags":"<br><b><i>","preHooks":"","postHooks":"","debug":false,"closed":false,"moderate":"0","moderateAnonymousOnly":false,"moderateFirstPostOnly":true,"moderators":"","moderatorGroup":"Administrator","dontModerateManagerUsers":true,"dateFormat":"%b %d, %Y at %I:%M %p","useCss":true,"notifyEmails":"","recaptcha":false,"recaptchaTheme":"clean","disableRecaptchaWhenLoggedIn":true,"autoConvertLinks":true,"extraAutoLinksAttributes":"","useGravatar":true,"gravatarIcon":"identicon","gravatarSize":50,"tplReport":"quipReport","idPrefix":"qcom","redirectTo":"","redirectToUrl":"","debugUser":"","debugUserId":""}');
+('post-2-7', '2016-05-05 12:18:16', 0, 'Administrator', '', '', 7, 'qcom', '{}', '{"tplComment":"comment","tplCommentOptions":"quipCommentOptions","tplComments":"quipComments","tplReport":"quipReport","rowCss":"quip-comment","altRowCss":"quip-comment-alt","olCss":"quip-comment-parent","unapprovedCss":"quip-unapproved","dateFormat":"%d %m %Y. \\u0432 %H:%M","showWebsite":true,"idPrefix":"qcom","resource":"","moderate":false,"moderators":false,"moderatorGroup":false,"requireAuth":false,"requireUsergroups":"","threaded":true,"threadedPostMargin":15,"useMargins":false,"maxDepth":5,"replyResourceId":"","closeAfter":14,"useGravatar":"0","gravatarIcon":"identicon","gravatarSize":50,"gravatarUrl":"http:\\/\\/www.gravatar.com\\/avatar\\/","sortBy":"rank","sortByAlias":"quipComment","sortDir":"ASC","limit":0,"offset":0,"removeAction":"quip_remove","reportAction":"quip_report","parent":"0","thread":"post-2-7","unsubscribeSecretHash":"One sees great things from the valley, only small things from the peak.","closed":false,"useCss":true,"authorTpl":"quipAuthorTpl","nameField":"username","showAnonymousName":false,"anonymousName":"","allowRemove":true,"removeThreshold":3,"allowReportAsSpam":true,"toPlaceholder":"","placeholderPrefix":"quip","debug":false,"debugUser":"","debugUserId":"","start":0,"tplPagination":"quipPagination","tplPaginationItem":"quipPaginationItem","tplPaginationCurrentItem":"quipPaginationCurrentItem","paginationCls":"quip-pagination","pageCls":"quip-page-number","currentPageCls":"quip-page-current","quip.emailsTo":"stan19781@gmail.com","stillOpen":false}', '{"thread":"post-2-7","requireAuth":"1","requireUsergroups":"","tplAddComment":"new-comment","tplLoginToComment":"quipLoginToComment","tplPreview":"quipPreviewComment","closeAfter":14,"requirePreview":false,"previewAction":"quip-preview","postAction":"quip-post","unsubscribeAction":"quip_unsubscribe","allowedTags":"<br><b><i>","preHooks":"","postHooks":"","debug":false,"closed":false,"moderate":"0","moderateAnonymousOnly":false,"moderateFirstPostOnly":true,"moderators":"","moderatorGroup":"Administrator","dontModerateManagerUsers":true,"dateFormat":"%b %d, %Y at %I:%M %p","useCss":true,"notifyEmails":"","recaptcha":false,"recaptchaTheme":"clean","disableRecaptchaWhenLoggedIn":true,"autoConvertLinks":true,"extraAutoLinksAttributes":"","useGravatar":true,"gravatarIcon":"identicon","gravatarSize":50,"tplReport":"quipReport","idPrefix":"qcom","redirectTo":"","redirectToUrl":"","debugUser":"","debugUserId":""}');
 
 -- --------------------------------------------------------
 
@@ -2620,7 +2622,7 @@ CREATE TABLE IF NOT EXISTS `modx_session` (
 --
 
 INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES
-('o5riiah1ctohfosktovd7ud6h3', 1465550794, 'modx.user.contextTokens|a:0:{}');
+('29csiiobs1pte3ilh2vlifvlb3', 1465562315, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -4128,7 +4130,7 @@ CREATE TABLE IF NOT EXISTS `modx_user_attributes` (
 --
 
 INSERT INTO `modx_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 56, 1465541520, 1465542838, 0, 'qa1s2jdbv2i32k0mq8pveph0s1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 58, 1465560124, 1465560879, 0, '08j2l9ulg5cidfnaun04e35nu2', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (5, 21, 'Елена', 'El.v.grach@gmail.com', '', '', 0, 0, 0, 2, 1462557837, 1463385057, 0, '875e8b21d41ee290402eb98fb8c389f8', 0, 0, '', '', '', '', '', '', '', '', '', '[]'),
 (6, 22, 'Владимир', 'vova.karabok.02@mail.ru', '', '', 0, 0, 0, 1, 0, 1463421916, 0, 'd9d0b90b26e0a8a18db0f838d8bc16b5', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 

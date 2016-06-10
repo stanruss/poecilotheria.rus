@@ -9,7 +9,7 @@
 	background-image: none
 	padding: 6px
 	background-color: transparent
-	box-shadow: -2px 2px 11px 4px rgba(255, 255, 255, 0.5)
+	box-shadow: -2px 2px 11px 4px rgba(0, 0, 0, 0.5)
 .carousel-inner
 	
 
@@ -120,14 +120,17 @@ section
 		top: 32px
 		position: relative
 		padding-top: 30px
-		
+		color: $white
 		min-height: 300px
 		margin-bottom: 32px
 		padding-bottom: 30px
+		small
+			color: $white
 		a
-			color: $black
+			color: $seb
 			text-decoration: none
-		
+		p
+			margin-top: 10px
 		.quip-fld
 			input
 				width: 100%
@@ -246,8 +249,8 @@ section
 		padding-bottom: 30px
 		
 		a
-			color: $dgrey
-			text-decoration: none
+			color: $white
+			text-decoration: underline
 		
 		h4
 			font-family: $rwsb
@@ -296,6 +299,7 @@ section
 	z-index: 2
 	h4
 		min-height: 40px
+		color: #192626
 	&:hover
 		border-color: #513f27
 		-webkit-transition: -webkit-transform 0.6s ease
@@ -371,7 +375,7 @@ section
 	position: relative
 	top: 32px
 	min-height: 500px
-	background-color: $mc
+	
 	margin-bottom: 32px
 	padding-bottom: 30px
 	.albumPreview
@@ -379,7 +383,7 @@ section
 		border: 1px #333 solid
 		margin-top: 20px
 		a
-			color: #000
+			color: $seb
 			text-decoration: none
 	.gal-item
 		width: 200px
@@ -401,6 +405,7 @@ section
 		margin-top: 0
 		margin-bottom: 30px
 		font-family: $rsb
+		color: #192626
 	h5
 		font-size: em(16px)
 		margin-top: 30px
@@ -409,6 +414,7 @@ section
 		display: inline-block
 		font-family: $rsr
 		font-size: em(15px)
+		color: #192626
 	.info-g
 		width: 320px
 		height: 150px
@@ -447,7 +453,7 @@ p.log
 	position: relative
 	z-index: 1
 	&:hover
-		background-color: $white
+		background-color: $seb
 		background-image: none
 		z-index: 200
 		position: relative
@@ -487,6 +493,7 @@ p.log
 	position: relative
 	z-index: 1
 	transition: all 1s ease
+	box-shadow: -2px 2px 11px 4px rgba(0, 0, 0, 0.5)
 .photo2
 	background-image: url(../img/Kaidalov.jpg) 
 	background-size: 200px 266px
@@ -496,6 +503,7 @@ p.log
 	position: relative
 	z-index: 1
 	transition: all 1s ease
+	box-shadow: -2px 2px 11px 4px rgba(0, 0, 0, 0.5)
 .photo3
 	background-image: url(../img/Polyakova.jpg) 
 	background-size: 200px 266px
@@ -505,3 +513,4 @@ p.log
 	position: relative
 	z-index: 1
 	transition: all 1s ease
+	box-shadow: -2px 2px 11px 4px rgba(0, 0, 0, 0.5)
