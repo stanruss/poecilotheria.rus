@@ -9,8 +9,9 @@
 	background-image: none
 	padding: 6px
 	background-color: transparent
-
-
+	box-shadow: -2px 2px 11px 4px rgba(255, 255, 255, 0.5)
+.carousel-inner
+	
 
 .carousel .container
 	position: relative
@@ -21,16 +22,18 @@
 	top: 17px
 	padding-top: 63px
 	font-size: 3.9em
-	color: $white
+	color: #777
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
 	background-color: transparent
 	border: 0
 	z-index: 10
-
+.carousel-control:focus, .carousel-control:hover
+	opacity: .33
 .carousel
 	.item
 		height: 250px
 		width: 100%
+		background-color: #fff
 	img
 		position: relative
 		width: 258px
@@ -39,7 +42,7 @@
 section
 	&.hal
 		padding: 10px 0 0
-		border-top: 1px #4a1106 solid
+		border-top: 1px $seb solid
 		img
 			margin-top: 15px
 			margin-left: auto
@@ -63,6 +66,12 @@ section
 		padding-bottom: 30px
 		.sisea-search-form
 			margin-top: 30px
+			button
+				background-color: #192626
+				color: $white
+				margin-left: 15px
+				&:hover
+					color: $seb
 			input#search
 				width: 75%
 				font-size: em(13px)
@@ -73,10 +82,16 @@ section
 	&.search
 		position: relative
 		
-		border-top: 1px #4a1106 solid
+		border-top: 1px $seb solid
 		.sisea-search-form
 			width: 100%
 			margin-top: 5px
+			button
+				background-color: #192626
+				color: $white
+				margin-left: 15px
+				&:hover
+					color: $seb
 			input#search
 				width: 75%
 				font-size: em(13px)
@@ -128,6 +143,8 @@ section
 		background-image: url(../img/header-bg.png)
 		background-repeat: no-repeat
 		background-position: top center
+		position: relative
+		top: 32px
 		.blog-sidebar
 			position: relative
 			top: 32px
@@ -240,12 +257,10 @@ section
 	&#contact
 		background-color: transparent
 		margin-bottom: 0
-		border-top: 2px #4a1106 solid
+		border-top: 2px $seb solid
 		padding-top: 30px
-		background-image: url(../img/footer_bg.jpg)
-		background-repeat: repeat-x
-		background-position: bottom center
-		padding-bottom: 155px
+		
+		padding-bottom: 55px
 		margin-top: 9px
 		background-color: transparent
 		margin-bottom: 0
@@ -253,6 +268,14 @@ section
 		label, button
 			font-family: $rwsb 
 			font-size: em(13px)
+		label
+			color: $white
+		button
+			background-color: #192626
+			color: $white
+			&:hover
+				color: $seb
+
 .services
 	padding-top: 15px
 	position: relative
@@ -424,7 +447,7 @@ p.log
 	position: relative
 	z-index: 1
 	&:hover
-		background-color: $gbf
+		background-color: $white
 		background-image: none
 		z-index: 200
 		position: relative
@@ -433,11 +456,11 @@ p.log
 		h3
 			padding-top: 50%
 			opacity: 1
-			color: $mc
+			color: #192626
 			transition: all .5s ease
 		h5
 			opacity: 1
-			color: $mc
+			color: #192626
 			transition: all .5s ease
 			
 	&::after

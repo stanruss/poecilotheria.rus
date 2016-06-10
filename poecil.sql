@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 10 2016 г., 09:23
+-- Время создания: Июн 10 2016 г., 12:27
 -- Версия сервера: 5.5.45
 -- Версия PHP: 5.3.29
 
@@ -1644,7 +1644,7 @@ CREATE TABLE IF NOT EXISTS `modx_manager_log` (
   `item` varchar(255) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `user_occurred` (`user`,`occurred`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=377 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=396 ;
 
 --
 -- Дамп данных таблицы `modx_manager_log`
@@ -2026,7 +2026,26 @@ INSERT INTO `modx_manager_log` (`id`, `user`, `occurred`, `action`, `classKey`, 
 (373, 1, '2016-06-09 21:10:32', 'login', 'modContext', 'mgr'),
 (374, 1, '2016-06-10 09:18:35', 'login', 'modContext', 'mgr'),
 (375, 1, '2016-06-10 09:19:01', 'login', 'modContext', 'web'),
-(376, 1, '2016-06-10 09:20:19', 'resource_update', 'modResource', '8');
+(376, 1, '2016-06-10 09:20:19', 'resource_update', 'modResource', '8'),
+(377, 1, '2016-06-10 09:43:34', 'login', 'modContext', 'mgr'),
+(378, 1, '2016-06-10 09:52:00', 'login', 'modContext', 'web'),
+(379, 1, '2016-06-10 10:06:13', 'chunk_update', 'modChunk', '10'),
+(380, 1, '2016-06-10 10:06:13', 'propertyset_update_from_element', 'modChunk', '10'),
+(381, 1, '2016-06-10 10:07:20', 'chunk_update', 'modChunk', '10'),
+(382, 1, '2016-06-10 10:07:20', 'propertyset_update_from_element', 'modChunk', '10'),
+(383, 1, '2016-06-10 10:08:34', 'chunk_update', 'modChunk', '10'),
+(384, 1, '2016-06-10 10:08:34', 'propertyset_update_from_element', 'modChunk', '10'),
+(385, 1, '2016-06-10 10:11:34', 'chunk_update', 'modChunk', '10'),
+(386, 1, '2016-06-10 10:11:34', 'propertyset_update_from_element', 'modChunk', '10'),
+(387, 1, '2016-06-10 10:13:22', 'chunk_update', 'modChunk', '10'),
+(388, 1, '2016-06-10 10:13:22', 'propertyset_update_from_element', 'modChunk', '10'),
+(389, 1, '2016-06-10 10:13:46', 'chunk_update', 'modChunk', '10'),
+(390, 1, '2016-06-10 10:13:47', 'propertyset_update_from_element', 'modChunk', '10'),
+(391, 1, '2016-06-10 10:13:58', 'login', 'modContext', 'web'),
+(392, 1, '2016-06-10 12:02:44', 'chunk_update', 'modChunk', '6'),
+(393, 1, '2016-06-10 12:02:44', 'propertyset_update_from_element', 'modChunk', '6'),
+(394, 1, '2016-06-10 12:06:00', 'chunk_update', 'modChunk', '6'),
+(395, 1, '2016-06-10 12:06:00', 'propertyset_update_from_element', 'modChunk', '6');
 
 -- --------------------------------------------------------
 
@@ -2601,7 +2620,7 @@ CREATE TABLE IF NOT EXISTS `modx_session` (
 --
 
 INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES
-('i0d1chuv51f5ecdrspftmslv87', 1465539660, 'modx.user.0.resourceGroups|a:1:{s:3:"mgr";a:0:{}}modx.user.0.attributes|a:1:{s:3:"mgr";a:5:{s:16:"modAccessContext";a:1:{s:3:"web";a:1:{i:0;a:3:{s:9:"principal";i:0;s:9:"authority";s:1:"0";s:6:"policy";a:1:{s:4:"load";b:1;}}}}s:22:"modAccessResourceGroup";a:0:{}s:17:"modAccessCategory";a:0:{}s:28:"sources.modAccessMediaSource";a:0:{}s:18:"modAccessNamespace";a:0:{}}}modx.user.contextTokens|a:0:{}');
+('o5riiah1ctohfosktovd7ud6h3', 1465550794, 'modx.user.contextTokens|a:0:{}');
 
 -- --------------------------------------------------------
 
@@ -2736,11 +2755,11 @@ INSERT INTO `modx_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `na
 (21, 1, 0, 'Comment', '', 0, 7, 0, '<li class="[[+cls]]" id="[[+idprefix]][[+id]]" [[+depth_margin:notempty=`style="padding-left: [[+depth_margin]]px"`]]>\n<div id="[[+idprefix]][[+id]]-div" class="quip-comment-body [[+alt]]">\n    <div class="quip-comment-right">\n        [[+gravatarUrl:notempty=`<img src="[[+gravatarUrl]]" class="quip-avatar" alt="" />`]]\n    </div>\n \n    <p class="quip-comment-meta">\n        <span class="quip-comment-author">[[+authorName]]:</span><br />\n        <span class="quip-comment-createdon"><a href="[[+url]]">[[+createdon]]</a>\n        [[+approved:if=`[[+approved]]`:is=`1`:then=``:else=`- <em>[[%quip.unapproved? &namespace=`quip` &topic=`default`]]</em>`]]\n        </span>\n    </p>\n \n    <div class="quip-comment-text">\n        <p>[[+body]]</p>\n \n        [[+replyUrl:notempty=`<p><span class="quip-reply-link"><a href="[[+replyUrl]]">[[%quip.reply? &namespace=`quip` &topic=`default`]]</a></span></p>`]]\n    </div>\n \n    <div class="quip-comment-options">\n        [[+report]]\n        [[+options]]\n    </div>\n    <div class="quip-break"></div>\n</div>\n    [[+children:notempty=`<ol class="quip-comment-list">[[+children]]</ol>`]]\n</li>', 0, 'a:0:{}', 0, ''),
 (4, 0, 0, 'blogit.get_posts', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, 0, '[[blogit.lexicon_load]]\n[[!getResources?\n	&parents=`[[*id]]`\n	&tpl=`blogit.blog_row_tpl`\n	&includeTVs=`1`\n	&processTVs=`1`\n	&tvPrefix=``\n	&where=`[[!TaggerGetResourcesWhere]]`\n]]', 0, 'a:0:{}', 0, ''),
 (5, 0, 0, 'blogit.taglist', 'Blogit - Created by MPThemes http://mpthemes.com', 0, 7, 0, '[[++blogit.use_tags:isequalto=`1`:then=`\r\n<h4>[[%blogit.tags_header]]</h4>\r\n[[TaggerGetTags? &rowTpl=`blogit.tag_links_tpl` &separator=`, `]]\r\n`]]', 0, 'a:0:{}', 0, ''),
-(6, 1, 0, 'tpl.AjaxForm.example', '', 0, 8, 0, '<form action="" method="post" class="ajax_form af_example">\n\n    <div class="form-group">\n        <label class="control-label" for="af_name">[[%af_label_name]]</label>\n        <div class="controls">\n            <input type="text" id="af_name" name="name" value="[[+fi.name]]" placeholder="" class="form-control"/>\n            <span class="error_name">[[+fi.error.name]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <label class="control-label" for="af_email">[[%af_label_email]]</label>\n        <div class="controls">\n            <input type="email" id="af_email" name="email" value="[[+fi.email]]" placeholder="" class="form-control"/>\n            <span class="error_email">[[+fi.error.email]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <label class="control-label" for="af_message">[[%af_label_message]]</label>\n        <div class="controls">\n            <textarea id="af_message" name="message" class="form-control" rows="5">[[+fi.message]]</textarea>\n            <span class="error_message">[[+fi.error.message]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <div class="controls">\n            <button type="reset" class="btn btn-default">[[%af_reset]]</button>\n            <button type="submit" class="btn btn-primary">[[%af_submit]]</button>\n        </div>\n    </div>\n\n    [[+fi.success:is=`1`:then=`\n    <div class="alert alert-success">[[+fi.successMessage]]</div>\n    `]]\n    [[+fi.validation_error:is=`1`:then=`\n    <div class="alert alert-danger">[[+fi.validation_error_message]]</div>\n    `]]\n</form>', 0, 'a:0:{}', 0, 'core/components/ajaxform/elements/chunks/chunk.example.tpl'),
+(6, 1, 0, 'tpl.AjaxForm.example', '', 0, 8, 0, '<form action="" method="post" class="ajax_form af_example">\n\n    <div class="form-group">\n        <label class="control-label" for="af_name">[[%af_label_name]]</label>\n        <div class="controls">\n            <input type="text" id="af_name" name="name" value="[[+fi.name]]" placeholder="" class="form-control"/>\n            <span class="error_name">[[+fi.error.name]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <label class="control-label" for="af_email">[[%af_label_email]]</label>\n        <div class="controls">\n            <input type="email" id="af_email" name="email" value="[[+fi.email]]" placeholder="" class="form-control"/>\n            <span class="error_email">[[+fi.error.email]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <label class="control-label" for="af_message">[[%af_label_message]]</label>\n        <div class="controls">\n            <textarea id="af_message" name="message" class="form-control" rows="5">[[+fi.message]]</textarea>\n            <span class="error_message">[[+fi.error.message]]</span>\n        </div>\n    </div>\n\n    <div class="form-group">\n        <div class="controls">\n            <button type="reset" class="btn ">[[%af_reset]]</button>\n            <button type="submit" class="btn ">[[%af_submit]]</button>\n        </div>\n    </div>\n\n    [[+fi.success:is=`1`:then=`\n    <div class="alert alert-success">[[+fi.successMessage]]</div>\n    `]]\n    [[+fi.validation_error:is=`1`:then=`\n    <div class="alert alert-danger">[[+fi.validation_error_message]]</div>\n    `]]\n</form>', 0, 'a:0:{}', 0, 'core/components/ajaxform/elements/chunks/chunk.example.tpl'),
 (7, 0, 0, 'SiteGalleryItemTpl', '', 0, 11, 0, '<div class="galItem [[+class]]">\n    <div class="title"><span>[[+title]]</span></div>\n    <a href="[[+src]]" class="gallery" title="[[+title]]">\n        <img src="/assets/components/site_gallery/connector.php?action=web/image/gallery/small&src=[[+src]]"/>\n    </a>\n</div>', 0, 'a:0:{}', 0, ''),
 (8, 0, 0, 'SiteGalleryRowTpl', '', 0, 11, 0, '<div class="[[+class]]">[[+wrapper]]</div>', 0, 'a:0:{}', 0, ''),
 (9, 0, 0, 'lgnLoginTpl', '', 0, 13, 0, '<div class="loginForm">\n    <div class="loginMessage">[[+errors]]</div>\n    <div class="loginLogin">\n        <form class="loginLoginForm" action="[[~[[*id]]]]" method="post">\n            <span><a class="left" href="[[~11]]">Забыли пароль?</a></span><span> / </span><span> <a class="right" href="[[~13]]"> Регистрация </a ></span>\n            <fieldset class="loginLoginFieldset">\n                \n                <label class="loginUsernameLabel">\n                    <input class="loginUsername" type="text" name="username" placeholder="Логин" />\n                </label>\n                \n                <label class="loginPasswordLabel">\n                    <input class="loginPassword" type="password" name="password" placeholder="Пароль" />\n                </label>\n                <input class="returnUrl" type="hidden" name="returnUrl" value="[[+request_uri]]" />\n\n                [[+login.recaptcha_html]]\n                \n                <input class="loginLoginValue" type="hidden" name="service" value="login" />\n                <span class="loginLoginButton"><button type="submit" name="Login"></button></span>\n\n            </fieldset>\n        </form>\n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
-(10, 0, 0, 'lgnLogoutTpl', '', 0, 13, 0, '<div class="loginMessage">[[+errors]]</div>\n<br />\n<div class="loginLogin">\n    <div class="loginRegister">\n        <a href="[[+logoutUrl]]" title="[[+actionMsg]]"><button class="out"></button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
+(10, 0, 0, 'lgnLogoutTpl', '', 0, 13, 0, '<div class="loginMessage">[[+errors]]</div>\n<br />\n<div class="loginLogin">\n    <div class="loginRegister">\n        <div class="butt"><a href="[[+logoutUrl]]" title="[[+actionMsg]]"><button class="out"></button></a>\n       <span> Добро пожаловать <b>[[+modx.user.id:userinfo=`username`]]</b></span></div>\n        \n    </div>\n</div>', 0, 'a:0:{}', 0, ''),
 (11, 0, 0, 'lgnErrTpl', '', 0, 13, 0, '<p class="error">[[+msg]]</p>', 0, 'a:0:{}', 0, ''),
 (12, 0, 0, 'lgnForgotPassEmail', '', 0, 13, 0, '<p>[[+username]],</p>\n\n<p>Для активации аккаунта, нажмите пожалуйста на ссылку снизу:</p>\n\n<p><a href="[[+confirmUrl]]">[[+confirmUrl]]</a></p>\n\n<p>Если все прошло удачно, можете уже авторизоваться в системе:</p>\n\n<p><strong>Password:</strong> [[+password]]</p>\n\n<p>Если вы не заказывали активацию, проигнорируйте это письмо.</p>\n\n<p>Спасибо,<br />\n<em>Администратор сайта poecilotheria.ru</em></p>', 0, 'a:0:{}', 0, ''),
 (13, 0, 0, 'lgnForgotPassSentTpl', '', 0, 13, 0, '\n<h2 class="center">Уважаемый пользователь!</h2>\n<p class="center">Ваши данные были посланы на ваш почтовый ящик [[+email]].</p>\n\n\n\n\n\n', 0, 'a:0:{}', 0, ''),
@@ -4109,7 +4128,7 @@ CREATE TABLE IF NOT EXISTS `modx_user_attributes` (
 --
 
 INSERT INTO `modx_user_attributes` (`id`, `internalKey`, `fullname`, `email`, `phone`, `mobilephone`, `blocked`, `blockeduntil`, `blockedafter`, `logincount`, `lastlogin`, `thislogin`, `failedlogincount`, `sessionid`, `dob`, `gender`, `address`, `country`, `city`, `state`, `zip`, `fax`, `photo`, `comment`, `website`, `extended`) VALUES
-(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 53, 1465539515, 1465539541, 0, 'hdatjfcmm4quu615rgharap1c1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
+(1, 1, 'Администратор по умолчанию', 'stan19781@gmail.com', '', '', 0, 0, 0, 56, 1465541520, 1465542838, 0, 'qa1s2jdbv2i32k0mq8pveph0s1', 0, 0, '', '', '', '', '', '', '', '', '', NULL),
 (5, 21, 'Елена', 'El.v.grach@gmail.com', '', '', 0, 0, 0, 2, 1462557837, 1463385057, 0, '875e8b21d41ee290402eb98fb8c389f8', 0, 0, '', '', '', '', '', '', '', '', '', '[]'),
 (6, 22, 'Владимир', 'vova.karabok.02@mail.ru', '', '', 0, 0, 0, 1, 0, 1463421916, 0, 'd9d0b90b26e0a8a18db0f838d8bc16b5', 0, 0, '', '', '', '', '', '', '', '', '', '[]');
 
