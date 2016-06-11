@@ -5,7 +5,7 @@
 
 .carousel
 	margin-bottom: 35px
-	top: 35px
+	top: 15px
 	background-image: none
 	padding: 6px
 	background-color: transparent
@@ -102,7 +102,7 @@ section
 	&.info-main
 		position: relative
 		padding: 30px 0
-		
+		border-top: 1px #fff solid
 		min-height: 200px
 		.sisea-search-form
 			margin: 30px 0
@@ -148,6 +148,7 @@ section
 		background-position: top center
 		position: relative
 		top: 32px
+		margin-bottom: 30px
 		.blog-sidebar
 			position: relative
 			top: 32px
@@ -179,7 +180,7 @@ section
 			text-align: center
 			font-size: em(16px)
 			font-family: $ptsb
-			color: $gbf
+			color: $seb
 	&.forgot
 		top: 32px
 		position: relative
@@ -188,6 +189,8 @@ section
 		min-height: 500px
 		h2, p
 			text-align: center
+		h2
+			color: $seb
 		.loginFP
 			min-width: 300px
 			max-width: 700px
@@ -204,26 +207,29 @@ section
 			p
 				text-align: center
 				font-family: $ptsb
-				color: $gbf
+				color: $seb
 				margin-top: 30px
 			.loginFPLegend
-				color: $gbf
+				color: $seb
 				text-align: center
 				font-family: $rwsb
 				font-size: em(16px)
 			.loginFPFieldset
 				text-align: center
+				color: $white
 				span.loginFPButton input
 					width: 300px
 					margin: 30px auto
+					color: #192626
+					box-shadow: -2px 2px 11px 4px rgba(0, 0, 0, 0.5)
 	&.reg
 		top: 32px
 		position: relative
 		padding-top: 30px
-		
+		color: $white
 		min-height: 500px
 		h3
-			color: #745a37
+			
 			text-align: center
 			font-family: $rwsb
 		.register
@@ -235,14 +241,17 @@ section
 				margin: 20px 0 3px 30px
 				font-size: em(13px)
 				font-family: $ptsb
+				color: $seb
 			input
 				width: 80%
 				margin: 0 30px
 				padding-left: 10px
 				font-size: em(13px)
 				font-family: $pts
+				color: #192626  
 			.sub
 				margin-top: 30px
+				box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.5)
 	&.info
 		top: 32px
 		position: relative
