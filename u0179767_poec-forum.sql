@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 14 2016 г., 13:42
+-- Время создания: Июн 27 2016 г., 13:32
 -- Версия сервера: 5.5.48
 -- Версия PHP: 5.3.29
 
@@ -145,16 +145,6 @@ INSERT INTO `phpbb_acl_groups` (`group_id`, `forum_id`, `auth_option_id`, `auth_
 (7, 12, 0, 24, 0),
 (8, 12, 0, 14, 0),
 (8, 12, 0, 10, 0),
-(1, 20, 0, 17, 0),
-(2, 20, 0, 15, 0),
-(3, 20, 0, 15, 0),
-(4, 20, 0, 21, 0),
-(5, 20, 0, 14, 0),
-(5, 20, 0, 10, 0),
-(6, 20, 0, 19, 0),
-(7, 20, 0, 24, 0),
-(8, 20, 0, 14, 0),
-(8, 20, 0, 10, 0),
 (1, 21, 0, 17, 0),
 (2, 21, 0, 15, 0),
 (3, 21, 0, 15, 0),
@@ -596,7 +586,11 @@ INSERT INTO `phpbb_acl_groups` (`group_id`, `forum_id`, `auth_option_id`, `auth_
 (1, 19, 0, 17, 0),
 (2, 19, 0, 17, 0),
 (3, 19, 0, 17, 0),
-(6, 19, 0, 17, 0);
+(6, 19, 0, 17, 0),
+(1, 20, 0, 17, 0),
+(2, 20, 0, 17, 0),
+(3, 20, 0, 17, 0),
+(6, 20, 0, 17, 0);
 
 -- --------------------------------------------------------
 
@@ -1459,7 +1453,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('bump_interval', '10', 0),
 ('bump_type', 'd', 0),
 ('cache_gc', '7200', 0),
-('cache_last_gc', '1465899685', 1),
+('cache_last_gc', '1467019912', 1),
 ('captcha_gd', '1', 0),
 ('captcha_gd_3d_noise', '1', 0),
 ('captcha_gd_fonts', '1', 0),
@@ -1482,7 +1476,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('coppa_mail', '', 0),
 ('cron_lock', '0', 1),
 ('database_gc', '604800', 0),
-('database_last_gc', '1465899698', 1),
+('database_last_gc', '1467019929', 1),
 ('dbms_version', '5.5.35-33.0', 0),
 ('default_dateformat', '|d M Y|, H:i', 0),
 ('default_lang', 'ru', 0),
@@ -1622,8 +1616,8 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('newest_user_id', '56', 1),
 ('newest_username', '#ReJeen#', 1),
 ('num_files', '0', 1),
-('num_posts', '9', 1),
-('num_topics', '8', 1),
+('num_posts', '18', 1),
+('num_topics', '17', 1),
 ('num_users', '6', 1),
 ('override_user_style', '0', 0),
 ('pass_complex', 'PASS_TYPE_ANY', 0),
@@ -1637,12 +1631,12 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('print_pm', '1', 0),
 ('questionnaire_unique_id', '6fcfae77e636beac', 0),
 ('queue_interval', '60', 0),
-('rand_seed', 'eaddda1ba9c2759bb6ce3581fbe2471f', 1),
-('rand_seed_last_update', '1465900794', 1),
+('rand_seed', '7d00e918d63cfdcabbc65a54e849b9a2', 1),
+('rand_seed_last_update', '1467023421', 1),
 ('ranks_path', 'images/ranks', 0),
 ('read_notification_expire_days', '30', 0),
 ('read_notification_gc', '86400', 0),
-('read_notification_last_gc', '1465899679', 1),
+('read_notification_last_gc', '1467022705', 1),
 ('record_online_date', '1462571473', 1),
 ('record_online_users', '3', 1),
 ('referer_validation', '1', 0),
@@ -1653,7 +1647,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('search_gc', '7200', 0),
 ('search_indexing_state', '', 1),
 ('search_interval', '0', 0),
-('search_last_gc', '1465899691', 1),
+('search_last_gc', '1467019918', 1),
 ('search_store_results', '1800', 0),
 ('search_type', '\\phpbb\\search\\fulltext_native', 0),
 ('secure_allow_deny', '1', 0),
@@ -1663,7 +1657,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('server_port', '80', 0),
 ('server_protocol', 'http://', 0),
 ('session_gc', '3600', 0),
-('session_last_gc', '1465899803', 1),
+('session_last_gc', '1467022689', 1),
 ('session_length', '3600', 0),
 ('site_desc', 'Информационный портал любителей экзотики', 0),
 ('site_home_text', 'Сайт poecilotheria.ru', 0),
@@ -1688,7 +1682,7 @@ INSERT INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES
 ('version', '3.1.9', 0),
 ('warnings_expire_days', '90', 0),
 ('warnings_gc', '14400', 0),
-('warnings_last_gc', '1465899689', 1);
+('warnings_last_gc', '1467022709', 1);
 
 -- --------------------------------------------------------
 
@@ -1963,7 +1957,7 @@ INSERT INTO `phpbb_forums` (`forum_id`, `parent_id`, `left_id`, `right_id`, `for
 (17, 15, 12, 13, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Aphonopelma', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 7, 2, 'Aphonopelma anax', 1465899974, 'stanruss', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
 (18, 15, 14, 15, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Augacephalus', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 8, 2, 'Augacephalus breyeri', 1465900397, 'stanruss', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 7, 1, 0),
 (19, 15, 16, 17, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Avicularia', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 11, 2, 'Avicularia metallica', 1465900794, 'stanruss', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 3, 0, 0, 3, 0, 0, 0, 7, 1, 0),
-(20, 15, 18, 19, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Brachypelma', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
+(20, 15, 18, 19, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Brachypelma', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 20, 2, 'Brachypelma smithi', 1467023259, 'stanruss', 'AA0000', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 9, 0, 0, 9, 0, 0, 0, 7, 1, 0),
 (21, 15, 20, 21, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Bumba', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (22, 15, 22, 23, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Ceratogyrus', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
 (23, 15, 24, 25, 'a:3:{i:1;a:2:{i:0;s:37:"Полезная информация";i:1;i:0;}i:4;a:2:{i:0;s:68:"Определение пола у пауков - птицеедов";i:1;i:1;}i:15;a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;i:1;}}', 'Chilobrachys', '', '', 7, '', '', '', 0, '', '', '', '', 7, '', 0, 1, 0, 0, 0, '', 0, '', '', 48, 0, 1, 0, 0, 0, 7, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0),
@@ -2042,7 +2036,8 @@ INSERT INTO `phpbb_forums_track` (`user_id`, `forum_id`, `mark_time`) VALUES
 (2, 16, 1463402454),
 (2, 17, 1465899974),
 (2, 18, 1465900397),
-(2, 19, 1465900794);
+(2, 19, 1465900794),
+(2, 20, 1467023259);
 
 -- --------------------------------------------------------
 
@@ -2171,7 +2166,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_log` (
   `log_time` int(11) unsigned NOT NULL DEFAULT '0',
   `log_operation` text COLLATE utf8_bin NOT NULL,
   `log_data` mediumtext COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=202 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=205 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Дамп данных таблицы `phpbb_log`
@@ -2378,7 +2373,10 @@ INSERT INTO `phpbb_log` (`log_id`, `log_type`, `user_id`, `forum_id`, `topic_id`
 (198, 0, 2, 0, 0, 0, '127.0.0.1', 1465900476, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:12:"Augacephalus";}'),
 (199, 0, 2, 0, 0, 0, '127.0.0.1', 1465900476, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;s:12:"Augacephalus";}'),
 (200, 0, 2, 0, 0, 0, '127.0.0.1', 1465900832, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:10:"Avicularia";}'),
-(201, 0, 2, 0, 0, 0, '127.0.0.1', 1465900832, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;s:10:"Avicularia";}');
+(201, 0, 2, 0, 0, 0, '127.0.0.1', 1465900832, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;s:10:"Avicularia";}'),
+(202, 0, 2, 0, 0, 0, '127.0.0.1', 1467023337, 'LOG_ADMIN_AUTH_SUCCESS', ''),
+(203, 0, 2, 0, 0, 0, '127.0.0.1', 1467023374, 'LOG_FORUM_EDIT', 'a:1:{i:0;s:11:"Brachypelma";}'),
+(204, 0, 2, 0, 0, 0, '127.0.0.1', 1467023374, 'LOG_FORUM_COPIED_PERMISSIONS', 'a:2:{i:0;s:59:"Фото сперматек пауков-птицеедов";i:1;s:11:"Brachypelma";}');
 
 -- --------------------------------------------------------
 
@@ -2617,7 +2615,6 @@ INSERT INTO `phpbb_moderator_cache` (`forum_id`, `user_id`, `username`, `group_i
 (10, 0, '', 8, 'Администраторы', 1),
 (11, 0, '', 8, 'Администраторы', 1),
 (12, 0, '', 8, 'Администраторы', 1),
-(20, 0, '', 8, 'Администраторы', 1),
 (21, 0, '', 8, 'Администраторы', 1),
 (22, 0, '', 8, 'Администраторы', 1),
 (23, 0, '', 8, 'Администраторы', 1),
@@ -3025,7 +3022,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_posts` (
   `post_delete_time` int(11) unsigned NOT NULL DEFAULT '0',
   `post_delete_reason` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `post_delete_user` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Дамп данных таблицы `phpbb_posts`
@@ -3039,7 +3036,16 @@ INSERT INTO `phpbb_posts` (`post_id`, `topic_id`, `forum_id`, `poster_id`, `icon
 (8, 8, 18, 2, 0, '127.0.0.1', 1465900397, 0, 1, 1, 1, 1, '', 'Augacephalus breyeri', '[img:25e7cxne]http&#58;//cs403018&#46;vk&#46;me/v403018972/b1a9/M2dr5r4jzPc&#46;jpg[/img:25e7cxne]\nL6', 'aaa6cf931ce90bf393bf162299eddb8a', 0, 'CA==', '25e7cxne', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
 (9, 9, 19, 2, 0, '127.0.0.1', 1465900633, 0, 1, 1, 1, 1, '', 'Avicularia versicolor', '[img:17ys8swb]http&#58;//i2&#46;photobucket&#46;com/albums/y31/Snipes05/Tarantulas/Avicularia/versicolor/Juvenile%20female%20Kristin/DSCN1691&#46;jpg[/img:17ys8swb]\n\nФото взято с [url:17ys8swb]http&#58;//www&#46;arachnoboards&#46;com/[/url:17ys8swb]', 'cfe2049f6fc39e084f3191e2d9214f5c', 0, 'GA==', '17ys8swb', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
 (10, 10, 19, 2, 0, '127.0.0.1', 1465900731, 0, 1, 1, 1, 1, '', 'Avicularia geroldi', '[img:2my3e354]http&#58;//i38&#46;servimg&#46;com/u/f38/19/09/76/07/imag0810&#46;jpg[/img:2my3e354]\nL4-5\n[img:2my3e354]http&#58;//i19&#46;servimg&#46;com/u/f19/19/09/76/07/-ss0tu10&#46;jpg[/img:2my3e354]\nL7', '6cb5b5f682c67c3f07188a3ae5edd3cf', 0, 'CA==', '2my3e354', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
-(11, 11, 19, 2, 0, '127.0.0.1', 1465900794, 0, 1, 1, 1, 1, '', 'Avicularia metallica', '[img:1pmtc8q5]http&#58;//cs623129&#46;vk&#46;me/v623129045/14ec7/6QGZncK2oZ0&#46;jpg[/img:1pmtc8q5]\nL5-6\n[img:1pmtc8q5]http&#58;//cs312520&#46;vk&#46;me/v312520972/8edc/gL54UGytgCI&#46;jpg[/img:1pmtc8q5]', '1ec6dab474e6c8d87b92f669a9dfaab4', 0, 'CA==', '1pmtc8q5', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
+(11, 11, 19, 2, 0, '127.0.0.1', 1465900794, 0, 1, 1, 1, 1, '', 'Avicularia metallica', '[img:1pmtc8q5]http&#58;//cs623129&#46;vk&#46;me/v623129045/14ec7/6QGZncK2oZ0&#46;jpg[/img:1pmtc8q5]\nL5-6\n[img:1pmtc8q5]http&#58;//cs312520&#46;vk&#46;me/v312520972/8edc/gL54UGytgCI&#46;jpg[/img:1pmtc8q5]', '1ec6dab474e6c8d87b92f669a9dfaab4', 0, 'CA==', '1pmtc8q5', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(12, 12, 20, 2, 0, '127.0.0.1', 1467022855, 0, 1, 1, 1, 1, '', 'Brachypelma auratum', '[img:2qs4zk4p]http&#58;//i19&#46;servimg&#46;com/u/f19/19/09/76/07/dsc_2610&#46;jpg[/img:2qs4zk4p]', 'f64a57d8cd8719a12284c298e13b8dda', 0, 'CA==', '2qs4zk4p', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(13, 13, 20, 2, 0, '127.0.0.1', 1467022896, 0, 1, 1, 1, 1, '', 'Brachypelma vagans', '[img:7862041n]http&#58;//s017&#46;radikal&#46;ru/i406/1411/10/e9d6bab7cb15&#46;jpg[/img:7862041n]', '998df55daf9f419f74db774c545d1a4f', 0, 'CA==', '7862041n', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(14, 14, 20, 2, 0, '127.0.0.1', 1467023009, 0, 1, 1, 1, 1, '', 'Brachypelma boehmei', '[img:27p0r20t]http&#58;//storage6&#46;static&#46;itmages&#46;ru/i/12/0918/h_1347990495_9792631_0ecbdeb40a&#46;jpeg[/img:27p0r20t]\n\nЛ7', '5d8812d7dce5b5a94f72874c0b0bcb65', 0, 'CA==', '27p0r20t', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(15, 15, 20, 2, 0, '127.0.0.1', 1467023043, 0, 1, 1, 1, 1, '', 'Brachypelma verdezi', '[img:gnxj8w1c]http&#58;//i18&#46;servimg&#46;com/u/f18/19/09/76/07/jbdqlj12&#46;jpg[/img:gnxj8w1c]', '60c4761accf53347723a1cd068fd780e', 0, 'CA==', 'gnxj8w1c', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(16, 16, 20, 2, 0, '127.0.0.1', 1467023044, 0, 1, 1, 1, 1, '', 'Brachypelma verdezi', '[img:2j8tmmly]http&#58;//i18&#46;servimg&#46;com/u/f18/19/09/76/07/jbdqlj12&#46;jpg[/img:2j8tmmly]', '60c4761accf53347723a1cd068fd780e', 0, 'CA==', '2j8tmmly', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(17, 17, 20, 2, 0, '127.0.0.1', 1467023096, 0, 1, 1, 1, 1, '', 'Brachypelma emilia', '[img:3bannaiw]http&#58;//s50&#46;radikal&#46;ru/i129/1411/55/4010693c6f97&#46;jpg[/img:3bannaiw]\n\nЛ5', 'aae07b13aa49a44ac93dd8a03ec2256f', 0, 'CA==', '3bannaiw', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(18, 18, 20, 2, 0, '127.0.0.1', 1467023144, 0, 1, 1, 1, 1, '', 'Brachypelma albopilosum', '[img:1jyx0dpd]http&#58;//i861&#46;photobucket&#46;com/albums/ab171/CassMack/IMG_2338&#46;jpg[/img:1jyx0dpd]', 'd94744d771ae44f650baf4efd1ad7c12', 0, 'CA==', '1jyx0dpd', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(19, 19, 20, 2, 0, '127.0.0.1', 1467023180, 0, 1, 1, 1, 1, '', 'Brachypelma sabulosum', '[img:2mpagqv9]http&#58;//i192&#46;photobucket&#46;com/albums/z153/kean912/PeT%20PicTuRes/Brachypelma%20Sabulosum/BSabulosum00114molt_zps9e4818f0&#46;jpg[/img:2mpagqv9]', '6b61b6e9bde4c8db80e32bb7082ac9fc', 0, 'CA==', '2mpagqv9', 1, 0, '', 0, 0, 0, 1, 0, '', 0),
+(20, 20, 20, 2, 0, '127.0.0.1', 1467023259, 0, 1, 1, 1, 1, '', 'Brachypelma smithi', '[img:16l6q7xd]http&#58;//cs424727&#46;vk&#46;me/v424727818/71a6/ncu1EvR0w1k&#46;jpg[/img:16l6q7xd]', 'fd027c9a2425284c58179379b0736587', 0, 'CA==', '16l6q7xd', 1, 0, '', 0, 0, 0, 1, 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -3349,7 +3355,7 @@ CREATE TABLE IF NOT EXISTS `phpbb_search_wordlist` (
   `word_text` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `word_common` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `word_count` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=551 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=595 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Дамп данных таблицы `phpbb_search_wordlist`
@@ -3483,7 +3489,7 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (125, 'товарами', 0, 0),
 (126, 'которого', 0, 0),
 (127, 'сможете', 0, 0),
-(128, 'http', 0, 9),
+(128, 'http', 0, 18),
 (129, 'rayskiyepodarki', 0, 0),
 (130, 'ассортименте', 0, 0),
 (131, 'магазина', 0, 0),
@@ -3576,7 +3582,7 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (218, 'v622024874', 0, 1),
 (219, '16078', 0, 1),
 (220, 'iarl2pwdgxy', 0, 1),
-(221, 'jpg', 0, 7),
+(221, 'jpg', 0, 15),
 (222, 'самок', 0, 1),
 (223, 'больше', 0, 1),
 (224, 'чем', 0, 2),
@@ -3604,8 +3610,8 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (246, 'легкого', 0, 1),
 (247, 'самец', 0, 1),
 (248, 'i38', 0, 2),
-(249, 'servimg', 0, 2),
-(250, 'com', 0, 7),
+(249, 'servimg', 0, 5),
+(250, 'com', 0, 12),
 (251, 'f38', 0, 2),
 (252, 'az5yon10', 0, 1),
 (253, 'самка', 0, 2),
@@ -3867,11 +3873,11 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (509, 'клиента', 0, 0),
 (510, 'закон', 0, 0),
 (511, 'навесы', 0, 0),
-(512, 'i861', 0, 1),
-(513, 'photobucket', 0, 2),
-(514, 'albums', 0, 2),
-(515, 'ab171', 0, 1),
-(516, 'cassmack', 0, 1),
+(512, 'i861', 0, 2),
+(513, 'photobucket', 0, 4),
+(514, 'albums', 0, 4),
+(515, 'ab171', 0, 2),
+(516, 'cassmack', 0, 2),
 (517, 'aphonopelmaanaxspermathecae', 0, 1),
 (518, 'взято', 0, 2),
 (519, 'arachnoboards', 0, 2),
@@ -3893,8 +3899,8 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (535, '20kristin', 0, 1),
 (536, 'dscn1691', 0, 1),
 (537, 'imag0810', 0, 1),
-(538, 'i19', 0, 1),
-(539, 'f19', 0, 1),
+(538, 'i19', 0, 2),
+(539, 'f19', 0, 2),
 (540, 'ss0tu10', 0, 1),
 (541, 'geroldi', 0, 1),
 (542, 'cs623129', 0, 1),
@@ -3905,7 +3911,51 @@ INSERT INTO `phpbb_search_wordlist` (`word_id`, `word_text`, `word_common`, `wor
 (547, 'v312520972', 0, 1),
 (548, '8edc', 0, 1),
 (549, 'gl54ugytgci', 0, 1),
-(550, 'metallica', 0, 1);
+(550, 'metallica', 0, 1),
+(551, 'dsc', 0, 1),
+(552, '2610', 0, 1),
+(553, 'brachypelma', 0, 10),
+(554, 'auratum', 0, 1),
+(555, 's017', 0, 1),
+(556, 'radikal', 0, 2),
+(557, 'i406', 0, 1),
+(558, '1411', 0, 2),
+(559, 'e9d6bab7cb15', 0, 1),
+(560, 'vagans', 0, 1),
+(561, 'storage6', 0, 1),
+(562, 'static', 0, 1),
+(563, 'itmages', 0, 1),
+(564, '0918', 0, 1),
+(565, '1347990495', 0, 1),
+(566, '9792631', 0, 1),
+(567, '0ecbdeb40a', 0, 1),
+(568, 'jpeg', 0, 1),
+(569, 'boehmei', 0, 1),
+(570, 'i18', 0, 2),
+(571, 'f18', 0, 2),
+(572, 'jbdqlj12', 0, 2),
+(573, 'verdezi', 0, 2),
+(574, 's50', 0, 1),
+(575, 'i129', 0, 1),
+(576, '4010693c6f97', 0, 1),
+(577, 'emilia', 0, 1),
+(578, 'img', 0, 1),
+(579, '2338', 0, 1),
+(580, 'albopilosum', 0, 1),
+(581, 'i192', 0, 1),
+(582, 'z153', 0, 1),
+(583, 'kean912', 0, 1),
+(584, 'pet', 0, 1),
+(585, '20pictures', 0, 1),
+(586, '20sabulosum', 0, 1),
+(587, 'bsabulosum00114molt', 0, 1),
+(588, 'zps9e4818f0', 0, 1),
+(589, 'sabulosum', 0, 1),
+(590, 'cs424727', 0, 1),
+(591, 'v424727818', 0, 1),
+(592, '71a6', 0, 1),
+(593, 'ncu1evr0w1k', 0, 1),
+(594, 'smithi', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -3943,6 +3993,15 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (9, 128, 0),
 (10, 128, 0),
 (11, 128, 0),
+(12, 128, 0),
+(13, 128, 0),
+(14, 128, 0),
+(15, 128, 0),
+(16, 128, 0),
+(17, 128, 0),
+(18, 128, 0),
+(19, 128, 0),
+(20, 128, 0),
 (4, 144, 0),
 (4, 145, 0),
 (4, 146, 0),
@@ -4040,6 +4099,14 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (9, 221, 0),
 (10, 221, 0),
 (11, 221, 0),
+(12, 221, 0),
+(13, 221, 0),
+(15, 221, 0),
+(16, 221, 0),
+(17, 221, 0),
+(18, 221, 0),
+(19, 221, 0),
+(20, 221, 0),
 (4, 222, 0),
 (4, 223, 0),
 (4, 224, 0),
@@ -4070,11 +4137,19 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (10, 248, 0),
 (4, 249, 0),
 (10, 249, 0),
+(12, 249, 0),
+(15, 249, 0),
+(16, 249, 0),
 (4, 250, 0),
 (5, 250, 0),
 (7, 250, 0),
 (9, 250, 0),
 (10, 250, 0),
+(12, 250, 0),
+(15, 250, 0),
+(16, 250, 0),
+(18, 250, 0),
+(19, 250, 0),
 (4, 251, 0),
 (10, 251, 0),
 (4, 252, 0),
@@ -4231,12 +4306,19 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (6, 385, 1),
 (6, 386, 1),
 (7, 512, 0),
+(18, 512, 0),
 (7, 513, 0),
 (9, 513, 0),
+(18, 513, 0),
+(19, 513, 0),
 (7, 514, 0),
 (9, 514, 0),
+(18, 514, 0),
+(19, 514, 0),
 (7, 515, 0),
+(18, 515, 0),
 (7, 516, 0),
+(18, 516, 0),
 (7, 517, 0),
 (7, 518, 0),
 (9, 518, 0),
@@ -4265,7 +4347,9 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (9, 536, 0),
 (10, 537, 0),
 (10, 538, 0),
+(12, 538, 0),
 (10, 539, 0),
+(12, 539, 0),
 (10, 540, 0),
 (10, 541, 1),
 (11, 542, 0),
@@ -4276,7 +4360,66 @@ INSERT INTO `phpbb_search_wordmatch` (`post_id`, `word_id`, `title_match`) VALUE
 (11, 547, 0),
 (11, 548, 0),
 (11, 549, 0),
-(11, 550, 1);
+(11, 550, 1),
+(12, 551, 0),
+(12, 552, 0),
+(12, 553, 1),
+(13, 553, 1),
+(14, 553, 1),
+(15, 553, 1),
+(16, 553, 1),
+(17, 553, 1),
+(18, 553, 1),
+(19, 553, 0),
+(19, 553, 1),
+(20, 553, 1),
+(12, 554, 1),
+(13, 555, 0),
+(13, 556, 0),
+(17, 556, 0),
+(13, 557, 0),
+(13, 558, 0),
+(17, 558, 0),
+(13, 559, 0),
+(13, 560, 1),
+(14, 561, 0),
+(14, 562, 0),
+(14, 563, 0),
+(14, 564, 0),
+(14, 565, 0),
+(14, 566, 0),
+(14, 567, 0),
+(14, 568, 0),
+(14, 569, 1),
+(15, 570, 0),
+(16, 570, 0),
+(15, 571, 0),
+(16, 571, 0),
+(15, 572, 0),
+(16, 572, 0),
+(15, 573, 1),
+(16, 573, 1),
+(17, 574, 0),
+(17, 575, 0),
+(17, 576, 0),
+(17, 577, 1),
+(18, 578, 0),
+(18, 579, 0),
+(18, 580, 1),
+(19, 581, 0),
+(19, 582, 0),
+(19, 583, 0),
+(19, 584, 0),
+(19, 585, 0),
+(19, 586, 0),
+(19, 587, 0),
+(19, 588, 0),
+(19, 589, 1),
+(20, 590, 0),
+(20, 591, 0),
+(20, 592, 0),
+(20, 593, 0),
+(20, 594, 1);
 
 -- --------------------------------------------------------
 
@@ -4305,8 +4448,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_sessions` (
 --
 
 INSERT INTO `phpbb_sessions` (`session_id`, `session_user_id`, `session_last_visit`, `session_start`, `session_time`, `session_ip`, `session_browser`, `session_forwarded_for`, `session_page`, `session_viewonline`, `session_autologin`, `session_admin`, `session_forum_id`) VALUES
-('2ef57659e6667fbf444b6c9f949c1854', 1, 1465899679, 1465899679, 1465899679, '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36', '', 'app.php/favicon.ico', 1, 0, 0, 0),
-('f62465552f8122d155def59bc403c117', 2, 1463492889, 1465900175, 1465900878, '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36', '', 'viewforum.php?f=15', 1, 0, 1, 15);
+('7f10311d691657b45a32662eb7288f89', 1, 1467019912, 1467019912, 1467019912, '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', '', 'app.php/favicon.ico', 1, 0, 0, 0),
+('ddaff7d387d4beb63432a0484a8f8ec3', 1, 1467023421, 1467023421, 1467023422, '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36', '', 'index.php', 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4490,21 +4633,30 @@ CREATE TABLE IF NOT EXISTS `phpbb_topics` (
   `topic_posts_approved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_unapproved` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `topic_posts_softdeleted` mediumint(8) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Дамп данных таблицы `phpbb_topics`
 --
 
 INSERT INTO `phpbb_topics` (`topic_id`, `forum_id`, `icon_id`, `topic_attachment`, `topic_reported`, `topic_title`, `topic_poster`, `topic_time`, `topic_time_limit`, `topic_views`, `topic_status`, `topic_type`, `topic_first_post_id`, `topic_first_poster_name`, `topic_first_poster_colour`, `topic_last_post_id`, `topic_last_poster_id`, `topic_last_poster_name`, `topic_last_poster_colour`, `topic_last_post_subject`, `topic_last_post_time`, `topic_last_view_time`, `topic_moved_id`, `topic_bumped`, `topic_bumper`, `poll_title`, `poll_start`, `poll_length`, `poll_max_options`, `poll_last_vote`, `poll_vote_change`, `topic_visibility`, `topic_delete_time`, `topic_delete_reason`, `topic_delete_user`, `topic_posts_approved`, `topic_posts_unapproved`, `topic_posts_softdeleted`) VALUES
-(4, 13, 0, 0, 0, 'Методы определения пола пауков - птицеедов', 2, 1463400650, 0, 3, 0, 0, 4, 'stanruss', 'AA0000', 4, 2, 'stanruss', 'AA0000', 'Методы определения пола пауков - птицеедов', 1463400650, 1465899820, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(4, 13, 0, 0, 0, 'Методы определения пола пауков - птицеедов', 2, 1463400650, 0, 4, 0, 0, 4, 'stanruss', 'AA0000', 4, 2, 'stanruss', 'AA0000', 'Методы определения пола пауков - птицеедов', 1463400650, 1467022708, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (5, 14, 0, 0, 0, 'Разворачивание экзувия Poecilotheria rufilata L5 для определения пола', 2, 1463401003, 0, 3, 0, 0, 5, 'stanruss', 'AA0000', 5, 2, 'stanruss', 'AA0000', 'Разворачивание экзувия Poecilotheria rufilata L5 для определения пола', 1463401003, 1465899840, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (6, 16, 0, 0, 0, 'Acanthoscurria geniculata', 2, 1463402454, 0, 4, 0, 0, 6, 'stanruss', 'AA0000', 6, 2, 'stanruss', 'AA0000', 'Acanthoscurria geniculata', 1463402454, 1464790677, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (7, 17, 0, 0, 0, 'Aphonopelma anax', 2, 1465899974, 0, 2, 0, 0, 7, 'stanruss', 'AA0000', 7, 2, 'stanruss', 'AA0000', 'Aphonopelma anax', 1465899974, 1465900268, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (8, 18, 0, 0, 0, 'Augacephalus breyeri', 2, 1465900397, 0, 2, 0, 0, 8, 'stanruss', 'AA0000', 8, 2, 'stanruss', 'AA0000', 'Augacephalus breyeri', 1465900397, 1465900484, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (9, 19, 0, 0, 0, 'Avicularia versicolor', 2, 1465900633, 0, 1, 0, 0, 9, 'stanruss', 'AA0000', 9, 2, 'stanruss', 'AA0000', 'Avicularia versicolor', 1465900633, 1465900633, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
 (10, 19, 0, 0, 0, 'Avicularia geroldi', 2, 1465900731, 0, 1, 0, 0, 10, 'stanruss', 'AA0000', 10, 2, 'stanruss', 'AA0000', 'Avicularia geroldi', 1465900731, 1465900732, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
-(11, 19, 0, 0, 0, 'Avicularia metallica', 2, 1465900794, 0, 1, 0, 0, 11, 'stanruss', 'AA0000', 11, 2, 'stanruss', 'AA0000', 'Avicularia metallica', 1465900794, 1465900794, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
+(11, 19, 0, 0, 0, 'Avicularia metallica', 2, 1465900794, 0, 1, 0, 0, 11, 'stanruss', 'AA0000', 11, 2, 'stanruss', 'AA0000', 'Avicularia metallica', 1465900794, 1465900794, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(12, 20, 0, 0, 0, 'Brachypelma auratum', 2, 1467022855, 0, 1, 0, 0, 12, 'stanruss', 'AA0000', 12, 2, 'stanruss', 'AA0000', 'Brachypelma auratum', 1467022855, 1467022855, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(13, 20, 0, 0, 0, 'Brachypelma vagans', 2, 1467022896, 0, 1, 0, 0, 13, 'stanruss', 'AA0000', 13, 2, 'stanruss', 'AA0000', 'Brachypelma vagans', 1467022896, 1467022897, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(14, 20, 0, 0, 0, 'Brachypelma boehmei', 2, 1467023009, 0, 1, 0, 0, 14, 'stanruss', 'AA0000', 14, 2, 'stanruss', 'AA0000', 'Brachypelma boehmei', 1467023009, 1467023009, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(15, 20, 0, 0, 0, 'Brachypelma verdezi', 2, 1467023043, 0, 1, 0, 0, 15, 'stanruss', 'AA0000', 15, 2, 'stanruss', 'AA0000', 'Brachypelma verdezi', 1467023043, 1467023044, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(16, 20, 0, 0, 0, 'Brachypelma verdezi', 2, 1467023044, 0, 1, 0, 0, 16, 'stanruss', 'AA0000', 16, 2, 'stanruss', 'AA0000', 'Brachypelma verdezi', 1467023044, 1467023044, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(17, 20, 0, 0, 0, 'Brachypelma emilia', 2, 1467023096, 0, 1, 0, 0, 17, 'stanruss', 'AA0000', 17, 2, 'stanruss', 'AA0000', 'Brachypelma emilia', 1467023096, 1467023097, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(18, 20, 0, 0, 0, 'Brachypelma albopilosum', 2, 1467023144, 0, 1, 0, 0, 18, 'stanruss', 'AA0000', 18, 2, 'stanruss', 'AA0000', 'Brachypelma albopilosum', 1467023144, 1467023144, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(19, 20, 0, 0, 0, 'Brachypelma sabulosum', 2, 1467023180, 0, 1, 0, 0, 19, 'stanruss', 'AA0000', 19, 2, 'stanruss', 'AA0000', 'Brachypelma sabulosum', 1467023180, 1467023181, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0),
+(20, 20, 0, 0, 0, 'Brachypelma smithi', 2, 1467023259, 0, 1, 0, 0, 20, 'stanruss', 'AA0000', 20, 2, 'stanruss', 'AA0000', 'Brachypelma smithi', 1467023259, 1467023259, 0, 0, 0, '', 0, 0, 1, 0, 0, 1, 0, '', 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4530,7 +4682,16 @@ INSERT INTO `phpbb_topics_posted` (`user_id`, `topic_id`, `topic_posted`) VALUES
 (2, 8, 1),
 (2, 9, 1),
 (2, 10, 1),
-(2, 11, 1);
+(2, 11, 1),
+(2, 12, 1),
+(2, 13, 1),
+(2, 14, 1),
+(2, 15, 1),
+(2, 16, 1),
+(2, 17, 1),
+(2, 18, 1),
+(2, 19, 1),
+(2, 20, 1);
 
 -- --------------------------------------------------------
 
@@ -4555,7 +4716,8 @@ INSERT INTO `phpbb_topics_track` (`user_id`, `topic_id`, `forum_id`, `mark_time`
 (2, 6, 16, 1463402454),
 (2, 7, 17, 1465899974),
 (2, 8, 18, 1465900397),
-(2, 11, 19, 1465900794);
+(2, 11, 19, 1465900794),
+(2, 20, 20, 1467023259);
 
 -- --------------------------------------------------------
 
@@ -4649,8 +4811,8 @@ CREATE TABLE IF NOT EXISTS `phpbb_users` (
 --
 
 INSERT INTO `phpbb_users` (`user_id`, `user_type`, `group_id`, `user_permissions`, `user_perm_from`, `user_ip`, `user_regdate`, `username`, `username_clean`, `user_password`, `user_passchg`, `user_email`, `user_email_hash`, `user_birthday`, `user_lastvisit`, `user_lastmark`, `user_lastpost_time`, `user_lastpage`, `user_last_confirm_key`, `user_last_search`, `user_warnings`, `user_last_warning`, `user_login_attempts`, `user_inactive_reason`, `user_inactive_time`, `user_posts`, `user_lang`, `user_timezone`, `user_dateformat`, `user_style`, `user_rank`, `user_colour`, `user_new_privmsg`, `user_unread_privmsg`, `user_last_privmsg`, `user_message_rules`, `user_full_folder`, `user_emailtime`, `user_topic_show_days`, `user_topic_sortby_type`, `user_topic_sortby_dir`, `user_post_show_days`, `user_post_sortby_type`, `user_post_sortby_dir`, `user_notify`, `user_notify_pm`, `user_notify_type`, `user_allow_pm`, `user_allow_viewonline`, `user_allow_viewemail`, `user_allow_massemail`, `user_options`, `user_avatar`, `user_avatar_type`, `user_avatar_width`, `user_avatar_height`, `user_sig`, `user_sig_bbcode_uid`, `user_sig_bbcode_bitfield`, `user_jabber`, `user_actkey`, `user_newpasswd`, `user_form_salt`, `user_new`, `user_reminded`, `user_reminded_time`) VALUES
-(1, 2, 1, '', 0, '', 1461935214, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'bdfd57d0afc93697', 1, 0, 0),
-(2, 3, 5, 'zik0zjzik0zjzik0zg\ni1cjyo000000\nzik0zjzi8sg0\n\ni1cjyo000000\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0', 0, '46.173.34.207', 1461935214, 'stanruss', 'stanruss', '$2y$10$lQwK4wJsSN6ldiJk./0bPeSvtxQk1tLwkO7tra00p8yfk3EfjYG6y', 0, 'stan19781@gmail.com', 307781185819, '', 1463492889, 0, 1465900794, 'index.php', '', 0, 0, 0, 0, 0, 0, 8, 'ru', '', '|d M Y|, H:i', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '23dca3c412bab761', 0, 0, 0),
+(1, 2, 1, '00000000000g13ydq8\ni1cjyo000000\ni1cjyo000000\n\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000', 0, '', 1461935214, 'Anonymous', 'anonymous', '', 0, '', 0, '', 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'en', '', 'd M Y H:i', 1, 0, '', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '018b04ffcd997bbd', 1, 0, 0),
+(2, 3, 5, 'zik0zjzik0zjzik0zg\ni1cjyo000000\nzik0zjzi8sg0\n\ni1cjyo000000\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\ni1cjyo000000\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0\nzik0zjzi8sg0', 0, '46.173.34.207', 1461935214, 'stanruss', 'stanruss', '$2y$10$lQwK4wJsSN6ldiJk./0bPeSvtxQk1tLwkO7tra00p8yfk3EfjYG6y', 0, 'stan19781@gmail.com', 307781185819, '', 1467023397, 0, 1467023259, 'viewforum.php?f=15', '', 0, 0, 0, 0, 0, 0, 17, 'ru', '', '|d M Y|, H:i', 1, 1, 'AA0000', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 1, 1, 1, 1, 230271, '', '', 0, 0, '', '', '', '', '', '', '67dc9010b6b2d504', 0, 0, 0),
 (3, 2, 6, '', 0, '', 1461935274, 'AdsBot [Google]', 'adsbot [google]', '', 1461935274, '', 0, '', 0, 1461935274, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'ru', 'UTC', '|d M Y|, H:i', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '24ba2df1fb7186f9', 0, 0, 0),
 (4, 2, 6, '', 0, '', 1461935274, 'Alexa [Bot]', 'alexa [bot]', '', 1461935274, '', 0, '', 0, 1461935274, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'ru', 'UTC', '|d M Y|, H:i', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', '531d222951be58de', 0, 0, 0),
 (5, 2, 6, '', 0, '', 1461935274, 'Alta Vista [Bot]', 'alta vista [bot]', '', 1461935274, '', 0, '', 0, 1461935274, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 'ru', 'UTC', '|d M Y|, H:i', 1, 0, '9E8DA7', 0, 0, 0, 0, -3, 0, 0, 't', 'd', 0, 't', 'a', 0, 1, 0, 0, 1, 1, 0, 230271, '', '', 0, 0, '', '', '', '', '', '', 'a4e926539a4bcd63', 0, 0, 0),
@@ -5625,7 +5787,7 @@ ALTER TABLE `phpbb_lang`
 -- AUTO_INCREMENT для таблицы `phpbb_log`
 --
 ALTER TABLE `phpbb_log`
-  MODIFY `log_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=202;
+  MODIFY `log_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=205;
 --
 -- AUTO_INCREMENT для таблицы `phpbb_modules`
 --
@@ -5645,7 +5807,7 @@ ALTER TABLE `phpbb_notification_types`
 -- AUTO_INCREMENT для таблицы `phpbb_posts`
 --
 ALTER TABLE `phpbb_posts`
-  MODIFY `post_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+  MODIFY `post_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT для таблицы `phpbb_privmsgs`
 --
@@ -5685,7 +5847,7 @@ ALTER TABLE `phpbb_reports_reasons`
 -- AUTO_INCREMENT для таблицы `phpbb_search_wordlist`
 --
 ALTER TABLE `phpbb_search_wordlist`
-  MODIFY `word_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=551;
+  MODIFY `word_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=595;
 --
 -- AUTO_INCREMENT для таблицы `phpbb_sitelist`
 --
@@ -5710,7 +5872,7 @@ ALTER TABLE `phpbb_teampage`
 -- AUTO_INCREMENT для таблицы `phpbb_topics`
 --
 ALTER TABLE `phpbb_topics`
-  MODIFY `topic_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+  MODIFY `topic_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT для таблицы `phpbb_users`
 --
